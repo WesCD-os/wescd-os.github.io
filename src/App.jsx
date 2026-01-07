@@ -1,15 +1,14 @@
 import "./App.css";
 import profile from "./assets/profile.png";
 
-
 export default function App() {
   return (
     <div className="page">
       <nav className="nav">
-        <div className="nav-left">Louies Andre Tabanao</div>
+        <div className="nav-left">PORTFOLIO - Louies Andre Tabanao </div>
         <div className="nav-right">
           <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#education">Education</a>
           <a href="#contact">Contact</a>
@@ -18,17 +17,17 @@ export default function App() {
 
       <header className="hero container">
         <div className="hero-card">
-          <div className="avatar"  aria-label="Profile photo">
+          <div className="avatar" aria-label="Profile photo">
             <img className="avatar-img" src={profile} alt="Louies Andre Tabanao" />
-            <div className="avatar-circle" />
           </div>
 
           <h1 className="hero-name">Louies Andre Tabanao</h1>
           <p className="hero-role">BSIT Student • Aspiring IT Intern</p>
 
           <p className="hero-summary">
-            I am a 4th-year BSIT student from Cristal e-College seeking an internship opportunity.
-            I’m adaptable, motivated to learn, and interested in gaining real-world exposure to professional IT environments.
+            4th-year BSIT student from Cristal e-College seeking an internship opportunity.
+            Interested in networking and system administration, and eager to gain real-world
+            exposure in a professional IT environment.
           </p>
 
           <div className="hero-actions">
@@ -46,130 +45,131 @@ export default function App() {
       </header>
 
       <main className="container">
+        {/* ABOUT */}
         <section id="about" className="section">
-          <h2>About</h2>
+          <h2>About Me</h2>
           <p className="text">
-            I enjoy learning through hands-on practice, improving through feedback, and working with a team.
-            I’m currently building projects that strengthen both my technical foundation and my professional communication.
+            I enjoy learning through hands-on practice and improving through feedback.
+            I’m currently strengthening my foundation in networking, system administration,
+            and troubleshooting while also building technical projects in development.
           </p>
         </section>
 
-        <section id="projects" className="section">
-          <h2>Featured Projects</h2>
+        {/* EXPERIENCE (matches resume) */}
+        <section id="experience" className="section">
+          <h2>Academic Experience</h2>
 
           <div className="grid">
             <article className="card">
               <div className="card-top">
-                <h3>HomeFitAR</h3>
-                <span className="tag">Unity • C# • AR</span>
+                <h3>Capstone Project: HomeFitAR – AR Interior Design Mobile Application</h3>
+                <span className="tag">Unity • C# • AR Foundation</span>
               </div>
-              <p className="text">
-                Augmented reality interior design app that allows users to place and preview furniture in real-world spaces.
-              </p>
+
               <ul className="list">
-                <li>Implemented object placement and interaction logic</li>
-                <li>Built UI flow for selecting and previewing items</li>
-                <li>Focused on debugging and stability improvements</li>
+                <li>Developed an augmented reality (AR) mobile application that allows users to place virtual furniture in real-world spaces</li>
+                <li>Implemented plane detection, object placement, drag, rotation, and scaling using AR Foundation</li>
+                <li>Designed the user interface for furniture selection, preview, and layout management</li>
               </ul>
+
               <div className="links">
-                <a href="#" target="_blank" rel="noreferrer">View Project</a>
-                <a href="#" target="_blank" rel="noreferrer">Demo</a>
+                {/* Replace # with real links later */}
+                <a href="https://sites.google.com/cec.edu.ph/homefit-ar/home" target="_blank" rel="noreferrer">View Project</a>
+                
               </div>
             </article>
 
             <article className="card">
               <div className="card-top">
-                <h3>Windows Server & Networking Lab</h3>
-                <span className="tag">Systems • Networking</span>
+                <h3>System Administration & Networking Experience</h3>
+                <span className="tag">Windows Server • Active Directory</span>
               </div>
-              <p className="text">
-                Academic hands-on setup of a client–server environment focusing on user access and connectivity.
-              </p>
-              <ul className="list">
-                <li>Created users and managed permissions (Active Directory)</li>
-                <li>Configured shared resources and access control</li>
-                <li>Verified connectivity and resolved access issues</li>
-              </ul>
-              <div className="links">
-                <a href="#" target="_blank" rel="noreferrer">Documentation</a>
-                <a href="#" target="_blank" rel="noreferrer">Screenshots</a>
-              </div>
-            </article>
 
-            <article className="card">
-              <div className="card-top">
-                <h3>Networking Practice</h3>
-                <span className="tag">Fundamentals</span>
-              </div>
-              <p className="text">
-                Network simulations and notes focused on IP addressing, topology basics, and troubleshooting.
-              </p>
               <ul className="list">
-                <li>Built basic LAN topologies</li>
-                <li>Practiced IP configuration and connectivity testing</li>
-                <li>Documented common issues and fixes</li>
+                <li>Assisted in setting up and maintaining a Windows Server–based network environment</li>
+                <li>Created and managed administrator and user accounts using Active Directory</li>
+                <li>Configured user permissions, access control, and shared resources from a central admin workstation</li>
+                <li>Connected multiple client PCs to the domain via a fiber-optic network infrastructure</li>
+                <li>Performed basic network configuration and troubleshooting, including connectivity and access issues</li>
               </ul>
+
               <div className="links">
-                <a href="#" target="_blank" rel="noreferrer">Notes</a>
+                {/* Replace # with real links later */}
               </div>
             </article>
           </div>
         </section>
 
+        {/* SKILLS (matches resume grouping) */}
         <section id="skills" className="section">
           <h2>Skills</h2>
+
           <div className="grid">
             <div className="card">
-              <h3>IT & Systems</h3>
+              <h3>Technical & System Skills</h3>
               <ul className="list">
-                <li>Troubleshooting fundamentals</li>
-                <li>Windows environment (basic)</li>
-                <li>System administration exposure</li>
+                <li>Windows Server administration (basic)</li>
+                <li>Active Directory user & permission management</li>
+                <li>Client–server network setup and troubleshooting</li>
+                <li>Basic networking (LAN, TCP/IP, IP addressing)</li>
+                <li>Fiber-optic–based network connectivity (basic exposure)</li>
               </ul>
             </div>
+
             <div className="card">
-              <h3>Networking</h3>
+              <h3>Programming & Development</h3>
               <ul className="list">
-                <li>LAN & TCP/IP fundamentals</li>
-                <li>Basic connectivity testing</li>
-                <li>Documentation of issues and fixes</li>
-              </ul>
-            </div>
-            <div className="card">
-              <h3>Development</h3>
-              <ul className="list">
-                <li>Unity & C#</li>
-                <li>HTML, CSS, JavaScript (basic)</li>
+                <li>C#</li>
+                <li>JavaScript & TypeScript (basic)</li>
+                <li>HTML & CSS</li>
                 <li>Git & GitHub</li>
+                <li>Python (basic)</li>
+              </ul>
+            </div>
+
+            <div className="card">
+              <h3>Tools and Platforms</h3>
+              <ul className="list">
+                <li>Windows OS (installation, configuration, troubleshooting)</li>
+                <li>Unity Editor</li>
+                <li>Visual Studio / VS Code</li>
+                <li>Cisco Packet Tracer (basic)</li>
               </ul>
             </div>
           </div>
         </section>
 
+        {/* EDUCATION (matches resume) */}
         <section id="education" className="section">
-          <h2>Education</h2>
-          <div className="card">
-            <h3>Cristal e-College</h3>
-            <p className="text">
-              Bachelor of Science in Information Technology • Expected 2026
-            </p>
-            <p className="muted">
-              Relevant coursework: Networking, Web Development, Hardware Troubleshooting
-            </p>
+          <h2>Education History</h2>
+
+          <div className="grid">
+            <div className="card">
+              <h3>Cristal e-College</h3>
+              <p className="text">Bachelor of Science in Information Technology, 2022–2026</p>
+              <p className="muted">Expected Graduation: 2026</p>
+            </div>
+
+            <div className="card">
+              <h3>Panglao Christian Academy Inc.</h3>
+              <p className="text">General Academic Strand, 2020–2022</p>
+            </div>
           </div>
         </section>
 
+        {/* CONTACT (matches resume) */}
         <section id="contact" className="section">
           <h2>Contact</h2>
           <div className="card">
+            <p className="text"><strong>Cell:</strong> +63 950 342 6923</p>
             <p className="text">
-              If you’d like to connect regarding internship opportunities, you can reach me here:
+              <strong>Email:</strong>{" "}
+              <a href="mailto:louiestabanao88@gmail.com">louiestabanao88@gmail.com</a>
             </p>
+            <p className="text"><strong>Address:</strong> Danao, Panglao, Bohol</p>
             <p className="text">
-              Email: <a href="mailto:louiestabanao88@gmail.com">louiestabanao88@gmail.com</a>
-            </p>
-            <p className="text">
-              GitHub: <a href="https://github.com/WesCD-os" target="_blank" rel="noreferrer">github.com/WesCD-os</a>
+              <strong>GitHub:</strong>{" "}
+              <a href="https://github.com/WesCD-os" target="_blank" rel="noreferrer">github.com/WesCD-os</a>
             </p>
           </div>
         </section>
