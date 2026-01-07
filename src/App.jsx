@@ -1,4 +1,6 @@
 import "./App.css";
+import profile from "./assets/profile.png";
+
 
 export default function App() {
   return (
@@ -16,8 +18,8 @@ export default function App() {
 
       <header className="hero container">
         <div className="hero-card">
-          <div className="avatar" aria-label="Profile photo">
-            {/* Optional: replace with your real image later */}
+          <div className="avatar"  aria-label="Profile photo">
+            <img className="avatar-img" src={profile} alt="Louies Andre Tabanao" />
             <div className="avatar-circle" />
           </div>
 
@@ -31,7 +33,7 @@ export default function App() {
 
           <div className="hero-actions">
             <a className="btn" href="mailto:louiestabanao88@gmail.com">Email Me</a>
-            <a className="btn ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+            <a className="btn ghost" href="https://github.com/WesCD-os" target="_blank" rel="noreferrer">GitHub</a>
             <a className="btn ghost" href="/resume.pdf" target="_blank" rel="noreferrer">Resume</a>
           </div>
 
@@ -167,7 +169,7 @@ export default function App() {
               Email: <a href="mailto:louiestabanao88@gmail.com">louiestabanao88@gmail.com</a>
             </p>
             <p className="text">
-              GitHub: <a href="https://github.com/LouiesTabanao" target="_blank" rel="noreferrer">github.com/LouiesTabanao</a>
+              GitHub: <a href="https://github.com/WesCD-os" target="_blank" rel="noreferrer">github.com/WesCD-os</a>
             </p>
           </div>
         </section>
